@@ -1,0 +1,10 @@
+class ContadorResponsavel extends Contador {
+    public ContadorResponsavel(String nome) {
+        super(nome);
+    }
+
+    @Override
+    public void realizarContabilidade(Empresa empresa) {
+        System.out.println("Contabilidade realizada por " + nome + " para a empresa " + empresa.getNome());
+    }
+}
