@@ -1,0 +1,10 @@
+class EmpresaPJ extends Empresa {
+    public EmpresaPJ(String nome, String cnpj) {
+        super(nome, cnpj);
+    }
+
+    @Override
+    public void imprimirInfo() {
+        System.out.println("Empresa PJ - Nome: " + nome + ", CNPJ: " + cnpj);
+    }
+}
