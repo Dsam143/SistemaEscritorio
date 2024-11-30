@@ -1,0 +1,13 @@
+abstract class Contador {
+    protected String nome;
+
+    public Contador(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public abstract void realizarContabilidade(Empresa empresa);
+}
