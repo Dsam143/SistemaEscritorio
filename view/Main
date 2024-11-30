@@ -1,0 +1,22 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+
+        Contador contador1 = new ContadorResponsavel("Samuel");
+        Empresa empresa1 = new EmpresaPJ("Google", "55.984.956/0001-48");
+        Empresa empresa2 = new EmpresaMEI("Micro Comércio", "98.765.432/0001-99");
+
+        CadastrarEmpresa cadastro = new CadastrarEmpresa();
+        cadastro.adicionarEmpresa(empresa1);
+        cadastro.adicionarEmpresa(empresa2);
+        cadastro.listarEmpresas();
+
+        // Realizando contabilidade
+        contador1.realizarContabilidade(empresa1);
+
+        // Deletando uma empresa
+        cadastro.deletarEmpresa("55.984.956/0001-48");
+        cadastro.listarEmpresas();
+    }
+}
