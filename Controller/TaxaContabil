@@ -1,3 +1,0 @@
-interface TaxaContabil {
-    double calcularTaxa();
-}
